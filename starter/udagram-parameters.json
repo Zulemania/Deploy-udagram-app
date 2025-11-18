@@ -9,10 +9,10 @@
     },
     {
         "ParameterKey": "InstanceType",
-        "ParameterValue": "t3.small"
+        "ParameterValue": "t2.micro"
     },
     {
         "ParameterKey": "AsgDesiredCapacity",
-        "ParameterValue": "2"
+        "ParameterValue": "4"
     }
 ]
