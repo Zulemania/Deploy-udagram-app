@@ -142,8 +142,9 @@ Resources:
           Fn::Base64: !Sub |
             #!/bin/bash
             apt-get update -y
-            apt-get install nginx -y
-            service nginx start
+            apt-get install -y nginx
+            systemctl start nginx
+            systemctl enable nginx
             echo "<h1>It works! Udagram, Udacity</h1>" > /var/www/html/index.html
 
   WebAppTargetGroup:

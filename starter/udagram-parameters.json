@@ -5,7 +5,7 @@
     },
     {
         "ParameterKey": "ServerAMIId",
-        "ParameterValue": "ami-0092e03b71b95bc25"
+        "ParameterValue": "ami-0e2c8caa4b6378d8c"
     },
     {
         "ParameterKey": "InstanceType",
