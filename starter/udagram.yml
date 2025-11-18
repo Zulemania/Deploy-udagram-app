@@ -1,8 +1,31 @@
-Description: CD12352 - Infrastructure as Code Project - Udagram
+Description: Application Stack for Udagram
 
 Parameters:
   # Add your parameters here
+  EnvironmentName:
+    Description: This name will be prefixed to all the resources.
+    Type: String
+  
+  ServerAMIId:
+    Description: AMI ID for EC2 instances (paste the latest Ubuntu 22.04 AMI here or use SSM parameter lookup).
+    Type: String
+  
+  InstanceType:
+    Description: EC2 instance type.
+    Type: String
+    Default: t3.small
 
+  VpcCIDR:
+    Description: CIDR block for the VPC.
+    Type: String
+    Default: 10.0.0.0/16
+  
+  AsgDesiredCapacity:
+    Type: String
+    Description: Desired capacity for the fleet of instances
+    Default: 1
+
+    
 Resources:
   # Add your resources here
   # We include a portion of the LaunchTemplate resource so you can use the UserData.
